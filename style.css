@@ -1,0 +1,26 @@
+body {
+    background-color: #9af3ff;
+}
+
+.menu a {
+    text-decoration: none;
+
+}
+
+h1.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p.about-me {
+    color: #338f9b;
+}
+
+span.italics {
+    font-style: italic;
+    font-weight: bold;
+}
+
+h2.project-name {
+    color: teal;
+}
