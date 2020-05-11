@@ -1,26 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 body {
     background-color: #9af3ff;
 }
 
 .menu a {
     text-decoration: none;
-
 }
 
-h1.title {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-p.about-me {
-    color: #338f9b;
-}
-
-span.italics {
-    font-style: italic;
-    font-weight: bold;
-}
-
-h2.project-name {
-    color: teal;
+.introduction__photo {
+    max-width: 25%;
+    float: left;
+    margin: 10px;
 }
