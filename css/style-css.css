@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle,
+            rgba(238, 174, 202, 1) 0%,
+            rgba(180, 203, 230, 1) 100%);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__page {
+    padding: 10px;
+    text-decoration: none;
+    background-color: thistle;
+    line-height: 26px;
+    font-size: 15px;
+    border: 1px solid slateblue;
+}
+
+.menu__page--homepage {
+    font-weight: bolder;
+}

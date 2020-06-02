@@ -27,37 +27,77 @@ main {
 }
 
 .menu {
-  display: flex;
-  justify-content: space-around;
+  padding: 16px;
+  display: none;
+}
+
+.menu--open {
+  display: block;
+  background-color: #fff;
 }
 
 .menu__page {
-  padding: 10px;
-  text-decoration: none;
-  background-color: thistle;
-  line-height: 26px;
-  font-size: 15px;
-  border: 1px solid slateblue;
+  display: block;
+  margin: 0 0 16px;
 }
 
 .menu__page--homepage {
   font-weight: bolder;
 }
 
-header.title {
-  margin: 20px auto;
+.hamburger {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 60px;
+}
+
+.title {
+  /* margin-bottom: 20px; */
+  background-color: rgb(79, 184, 216);
   text-transform: uppercase;
   text-align: center;
 }
 
-section.introduction {
+/* section.introduction {
   width: 90%;
   margin: 20px 10px;
-}
+} */
 
 .introduction__photo {
-  max-width: 25%;
+  max-width: 40%;
   float: left;
   margin: 0 10px;
   border-radius: 50%;
+}
+
+.main {
+  margin-top: 60px;
+  display: grid;
+}
+
+.italics {
+  font-style: italic;
+}
+
+@media (min-width:768px) {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu__page {
+    padding: 10px;
+    text-decoration: none;
+    background-color: thistle;
+    line-height: 26px;
+    font-size: 15px;
+    border: 1px solid slateblue;
+  }
 }
